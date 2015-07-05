@@ -21,10 +21,10 @@ meteor add clinical:graphs-dailystats
 ````  
 **JS**  
 ````js
-# isomorphic object
+// isomorphic object
 StatsCounter.incrementTodayCount();
 
-# remote procedure call
+// remote procedure call
 Meteor.call('incrementTodayCount');
 ````  
 
