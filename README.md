@@ -12,14 +12,17 @@ DailyStats linechart for Meteor ClinicalFramework using D3 and NVD3.
 meteor add clinical:graphs-dailystats
 ````
 
+Then add the graph to your application with the following.  
+````html
+{{> DailyStatsChart }}
+````  
+
+You can currently only have one DaiilyStatsChart on the page at a time.
+
+
 ==========================
 #### API  
 
-**HTML**  
-````html
-{{> DailyStatsChart id='dailyInteractionsDailyStatsPanel'}}
-````  
-**JS**  
 ````js
 // isomorphic object
 StatsCounter.incrementTodayCount();
@@ -29,6 +32,18 @@ Meteor.call('incrementTodayCount');
 ````  
 
 
+==========================
+#### Testing API  
+
+Be sure to run ``starrynight generate-autoconfig`` to add the component tests to your ``.meteor/nightwatch.js`` config file.
+
+````js
+// component output
+.reviewDailyStatsChart()
+
+// component input
+.clickDailyStatsChart()
+````  
 
 ==========================
 ####Contributions & Licensing  
