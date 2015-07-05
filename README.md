@@ -28,7 +28,11 @@ StatsCounter.incrementTodayCount();
 Meteor.call('incrementTodayCount');
 ````  
 
-==========================
-####Licensing  
 
-MIT.  Use as you will.
+
+==========================
+####Contributions & Licensing  
+
+Made possible by the support of the Open Health Imaging Foundation and the Open Genomics Core.  
+
+MIT licensed.  Use as you will.
