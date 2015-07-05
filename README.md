@@ -11,10 +11,19 @@ meteor add clinical:graphs-dailystats
 ````
 
 ==========================
-####Code API  
+#### API  
 
+**HTML**  
 ````html
 {{> DailyStatsChart id='dailyInteractionsDailyStatsPanel'}}
+````  
+**JS**  
+````js
+# isomorphic object
+StatsCounter.incrementTodayCount();
+
+# remote procedure call
+Meteor.call('incrementTodayCount');
 ````  
 
 ==========================

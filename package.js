@@ -2,7 +2,7 @@ Package.describe({
   name: 'clinical:graphs-dailystats',
   version: '0.0.1',
   // Brief, one-line summary of the package.
-  summary: '',
+  summary: 'DailyStats linechart for Meteor ClinicalFramework ',
   // URL to the Git repository containing the source code for this package.
   git: 'http://github.com/awatson1978/',
   // By default, Meteor will default to using README.md for documentation.
@@ -14,7 +14,7 @@ Package.onUse(function(api) {
   api.versionsFrom('1.1.0.2');
   api.use('meteor-platform');
   api.use('less');
-  api.use('momentjs:moment');
+  api.use('momentjs:moment@2.10.3');
 
   api.addFiles('components/dailystats/dailyInteractionsLineGraph.js', 'client');
 
