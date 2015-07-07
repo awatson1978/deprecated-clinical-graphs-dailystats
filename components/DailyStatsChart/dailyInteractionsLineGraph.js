@@ -94,9 +94,17 @@ Graphs = {
         bucketCConfig
       ];*/
 
+
+            /*var data = [{
+              color: "#45b76f",
+              key: "Total",
+              values: DailyStats.find().fetch()
+            }
+            ];*/
+
       var graphData = [];
       Object.keys(dailyStatsConfig).forEach(function(key){
-        graphData[key] = dailyStatsConfig[key];
+        graphData.push(dailyStatsConfig[key]);
       });
 
       console.log("graphData", graphData);
