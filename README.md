@@ -40,18 +40,22 @@ If you want multiple lines in your graph, you'll need to set up a configuration 
 ````js
 Meteor.startup(function(){  
   DailyStats.configure({
-     bucketA: {
-       color: "#E68A2E",
-       label: "Foo"
-     },
-     bucketB: {
-       color: "#80B2FF",
-       label: "Bar"
-     },
-     bucketC: {
-       color: "#DB4D4D",
-       label: "Squee"
-     }
+    dailyTotal: {
+      color: "#45b76f",
+      key: "Total"
+    },
+    bucketA: {
+      color: "#E68A2E",
+      key: "Foo"
+    },
+    bucketB: {
+      color: "#80B2FF",
+      key: "Bar"
+    },
+    bucketC: {
+      color: "#DB4D4D",
+      key: "Squee"
+    }
   });
 });
 ````
@@ -62,11 +66,10 @@ Meteor.startup(function(){
 
 ````js
 // isomorphic object
-StatsCounter.incrementTodayCount();
 StatsCounter.incrementCount("bucketA");
 
 // remote procedure call
-Meteor.call('incrementTodayCount');
+Meteor.call('incrementCount', "bucketB");
 ````  
 
 
