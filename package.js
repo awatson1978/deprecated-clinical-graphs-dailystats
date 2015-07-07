@@ -13,6 +13,7 @@ Package.describe({
 Package.onUse(function(api) {
   api.versionsFrom('1.1.0.2');
   api.use('meteor-platform');
+  api.use('session');
   api.use('less');
   api.use('d3js:d3@3.5.5');
   api.use('nvd3:nvd3@1.7.1');
