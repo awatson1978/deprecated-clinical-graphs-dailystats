@@ -1,6 +1,6 @@
 Package.describe({
   name: 'clinical:graphs-dailystats',
-  version: '1.2.1',
+  version: '1.3.0',
   // Brief, one-line summary of the package.
   summary: 'DailyStats linechart for Meteor ClinicalFramework ',
   // URL to the Git repository containing the source code for this package.

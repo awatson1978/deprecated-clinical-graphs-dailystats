@@ -1,6 +1,6 @@
-totalDataBucketConfig = {
+dailyTotal = {
   color: "#45b76f",
-  key: "Total"
+  key: "DailyTotal"
 }
 bucketAConfig = {
   color: "#E68A2E",
