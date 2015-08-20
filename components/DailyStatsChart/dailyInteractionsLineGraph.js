@@ -17,7 +17,7 @@ bucketCConfig = {
 
 Graphs = {
   renderDailyInteractionsDailyStats: function(){
-    console.log('Graphs.renderDailyInteractionsDailyStats');
+    //console.log('Graphs.renderDailyInteractionsDailyStats');
 
 
       // Begin rendering our graph by creating a query object
@@ -28,7 +28,7 @@ Graphs = {
         $lt: parseInt(moment(Session.get('endDate')).format("YYYYMMDD")),
         $gt: parseInt(moment(Session.get('startDate')).format("YYYYMMDD"))
       };*/
-      console.log('queryObject', queryObject);
+      //console.log('queryObject', queryObject);
 
 
       var dailyStatsConfig = Session.get('DailyStatsConfig');
@@ -54,7 +54,7 @@ Graphs = {
           doc.yAxisValue = doc[key];
         });
       });
-      console.log("dailyStatsConfig", dailyStatsConfig);
+      //console.log("dailyStatsConfig", dailyStatsConfig);
 
       /*var totalData = DailyStats.find(queryObject, {sort:{dateIncrement: -1}}).fetch();
       var totalsBucketA = DailyStats.find(queryObject ,{sort:{dateIncrement: -1}}).fetch();
@@ -107,7 +107,7 @@ Graphs = {
         graphData.push(dailyStatsConfig[key]);
       });
 
-      console.log("graphData", graphData);
+      //console.log("graphData", graphData);
 
 
 
@@ -116,7 +116,7 @@ Graphs = {
       var chart;
       nv.addGraph({
         generate: function(){
-          console.log('generating dailyInteractionsDailyStats...');
+          //console.log('generating dailyInteractionsDailyStats...');
 
           // we set some height & width values, apply margins, etc.
           var width = $('#dailyInteractionsDailyStats').width();
