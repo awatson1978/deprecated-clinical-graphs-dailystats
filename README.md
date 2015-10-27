@@ -38,7 +38,7 @@ Router.map(function(){
 If you want multiple lines in your graph, you'll need to set up a configuration object.
 
 ````js
-Meteor.startup(function(){  
+Meteor.startup(function (){  
   DailyStats.configure({
     dailyTotal: {
       color: "#45b76f",
