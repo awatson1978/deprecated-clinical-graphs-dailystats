@@ -1,6 +1,6 @@
 Package.describe({
   name: 'clinical:graphs-dailystats',
-  version: '2.3.3',
+  version: '2.3.4',
   summary: 'DailyStats linechart for Meteor ClinicalFramework ',
   git: 'https://github.com/clinical-meteor/clinical-graphs-dailystats',
   documentation: 'README.md'
@@ -8,6 +8,7 @@ Package.describe({
 
 Package.onUse(function (api) {
   api.versionsFrom('1.1.0.2');
+
   api.use('meteor-platform');
   api.use('session');
   api.use('grove:less@0.1.1');
