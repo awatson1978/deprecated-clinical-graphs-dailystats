@@ -129,7 +129,7 @@ Graphs = {
 
           // this defines how we're going to draw the data
           chart = nv.models.lineChart()
-            .x(function(d) { return moment(d.date); })
+            .x(function(d) { return new Date(d.date); })
             .y(function(d) { return d.yAxisValue; })
             .forceY([0,100])
             .color(d3.scale.category20().range())
